@@ -17,10 +17,10 @@ getListProduct();
 
 function renderData(data){
     var content = "";
-    data.forEach(function(item){
+    data.forEach(function(item, index){
         content += `
         <tr>
-            <td>${item.id}</td>
+            <td>${index+1}</td>
             <td>${item.tenSP}</td>
             <td>${item.gia}</td>
             <td>
